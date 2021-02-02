@@ -1,0 +1,55 @@
+body{
+  background-color: orange;
+  margin: 30px;
+}
+
+.p1{
+  display: flex;
+  justify-content:center;
+  color: red;
+  font-size: 34px;
+}
+
+.p2{
+  display: flex;
+  justify-content:center;
+  font-size: 18px;
+}
+
+.BOTON{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#botonCalcular{
+  background: yellow;
+  color: blue;
+  font-size: 25px;
+}
+
+#botonLimpiar{
+  background: blue;
+  color: yellow;
+  font-size: 25px;
+}
+
+#botonActualizar{
+  background: yellow;
+  color: blue;
+  font-size: 25px;
+}
+
+.contenedor{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenedor img{
+  border-radius: 20px;
+}
+
+.contenedor2{
+  font-size: 20px;
+}

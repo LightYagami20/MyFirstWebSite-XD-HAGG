@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Calculadora xd</title>
+  <link rel="stylesheet" href="Estilo.css">
+</head>
+<body>
+  <form id="TODO" name=" " method="post">
+    <div class="p1"><p>¡BIENVENIDOS!</p></div>
+    <div class="p2"><p>Esta página web tiene como objetivo calcular el porcentaje de fidelidad e infidelidad que tiene la persona con solo colocar su nombre...</p></div>
+    <br>INGRESE SU NOMBRE: <input type="text" id="nombre" value=" " autofocus></br>
+    <br></br>
+    <br><div class="BOTON"><input type="button" id="botonCalcular" value="CALCULAR" onclick="generate();">
+                          <input type="button" id="botonLimpiar" value="LIMPIAR" onclick="limpiar();">
+                          <input type="button" id="botonActualizar" value="ACTUALIZAR" onclick="location.reload()"/></div></br>
+    <br></br>
+    <div class="contenedor">
+      <div class="contenedor2">
+        <h1>DATOS:</h1>
+        <br>NOMBRE: <span id="Nomb" >   </span></br>
+        <br>NIVEL DE FIDELIDAD: <span id="Fide">   </span></br>
+        <br>NIVEL DE INFIDELIDAD: <span id="Infi">  </span></br>
+      </div>
+      <!--<div class="lulu"> --><img src="Lelouch.jpg" width="400" height="300"  alt="Hector García XD" title="Hector García XD"/><!--</div>-->
+    </div>
+  </form>
+  <script type="text/javascript">
+    function generate() {
+      var Nompers = document.getElementById('nombre').value;
+      document.getElementById('Nomb').innerHTML ="  "+ Nompers;
+
+      var fideli = Math.round(Math.random()*101);
+      document.getElementById('Fide').innerHTML ="  "+ fideli+"%";
+
+      var infideli = 100 - fideli;
+      document.getElementById('Infi').innerHTML ="  "+ infideli+"%";
+    }
+
+    function limpiar() {
+      document.getElementById('TODO').reset();
+    }
+  </script>
+</body>
+</html>
